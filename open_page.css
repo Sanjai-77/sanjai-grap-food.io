@@ -1,0 +1,16 @@
+body {
+    background-image: url(FOOD\ DELIVERY.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.navigation {
+    text-align: right;
+    margin-right: 50%;
+    
+}
+
+.no-underline {
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feastly - Login</title>
+    <link rel="stylesheet" href="login1.css">
+</head>
+<body class="loaded">
+    <!-- Background PNG images -->
+    <img src="1.png" alt="Background Image 1" class="img-background img1">
+    <img src="2.png" alt="Background Image 2" class="img-background img2">
+    <img src="" alt="Background Image 3" class="img-background img3">
+    <img src="4.png" alt="Background Image 4" class="img-background img4">
+    <img src="" alt="Background Image 5" class="img-background img5">
+    <img src="" alt="Background Image 6" class="img-background img6">
+    <img src="" alt="Background Image 7" class="img-background img7">
+    <img src="" alt="Background Image 8" class="img-background img8">
+    <img src="9.png" alt="Background Image 9" class="img-background img9">
+
+    <!-- Login Container -->
+    <div class="container">
+        <h1>Login to Your Account</h1>
+
+        <!-- Login Form -->
+        <form onsubmit="redirectToAfterLogin(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+        
+        <p>Don't have an account?<br><br><a href="sign.html">Sign up</a></p>
+    </div>
+
+    <script>
+        function redirectToAfterLogin(event) {
+            event.preventDefault(); // Prevents form submission
+            // Add your login validation logic here if needed
+            window.location.href = "after_login.html"; // Redirects to after_login page
+        }
+    </script>
+</body>
+</html>
