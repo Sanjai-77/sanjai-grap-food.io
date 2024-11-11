@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Feastly</title>
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Feastly</h1>
+        </nav>
+    </header>
+    <main>
+        <section class="payment-section">
+            <h2>Payment</h2>
+            <form action="confirm.html" method="POST">
+                <label for="cardName">Cardholder Name</label>
+                <input type="text" id="cardName" name="cardName" required>
+
+                <label for="cardNumber">Card Number</label>
+                <input type="text" id="cardNumber" name="cardNumber" maxlength="16" required>
+
+                <div class="card-details">
+                    <div>
+                        <label for="expiryDate">Expiry Date</label>
+                        <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                    </div>
+                    <div>
+                        <label for="cvv">CVV</label>
+                        <input type="password" id="cvv" name="cvv" maxlength="3" required>
+                    </div>
+                </div>
+
+                <div class="total-amount">
+                    <p>Total: ₹<span id="totalAmount">349</span></p>
+                </div>
+                
+                <button type="submit" class="pay-button">Pay Now</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
