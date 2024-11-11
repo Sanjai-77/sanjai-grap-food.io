@@ -3,29 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grab Food Sign Up</title>
+    <title>Feastly - Sign Up</title>
     <link rel="stylesheet" href="sign.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Create Your Account</h1>
-        <!-- Specify the action attribute to navigate to after_login.html -->
-        <form action="after_login.html" method="POST">
-            <div class="input-group">
-                <label for="username">Username</label>
-                <input type="text" id="username" name="username" required>
-            </div>
-            <div class="input-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="input-group">
-                <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <button type="submit">Sign Up</button>
-        </form>
-    </div>
+    <header>
+        <h1>Welcome to Feastly</h1>
+        <p>Create an account to enjoy your favorite food</p>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Create a New Account</h2>
+            <form action="after_login.html" method="POST">
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="login.html">Login here</a></p>
+        </div>
+    </main>
 </body>
 </html>
-
